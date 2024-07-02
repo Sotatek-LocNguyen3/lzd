@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{mail.greeting.subject}"></title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<p style="color: blue" th:text="#{mail.greeting.hello(${username})}"></p>
+<p th:text="#{mail.greeting.creation}"></p>
+</body>
+</html>

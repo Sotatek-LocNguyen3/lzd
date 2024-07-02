@@ -1,0 +1,30 @@
+jwt:
+  expiration: 86400000
+  signing-key: bGV2aWV0ZHVj
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: admin
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/lazadu
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 32MB
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port: 587
+    username: vietduc.bk69@gmail.com
+    password: kryb zhwn ukio pmpe
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  messages:
+    basename: i18n/messages
